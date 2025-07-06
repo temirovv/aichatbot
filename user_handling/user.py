@@ -51,7 +51,7 @@ async def ai_chat_handler(message: Message, state: FSMContext):
 
     prompt = message.text
     user = message.from_user
-    lang = db.get_user_language(user.id)
+    lang = db.get_user_language(user.id)[0]
     
     content = make_converstaion(prompt)
 
