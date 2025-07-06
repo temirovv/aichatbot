@@ -14,6 +14,7 @@ def make_converstaion(prompt: str):
     try:
         chat = model.start_chat()
         res = chat.send_message(prompt,generation_config=generation_config)
+        print(f"{res=}")
         return res.text
     except Exception:
         return
