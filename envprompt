@@ -1,0 +1,4 @@
+create .env file with this variables
+BOT_TOKEN 
+ADMINS 
+GEMINI_API_KEY
